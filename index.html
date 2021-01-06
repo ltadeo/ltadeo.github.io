@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Home Page</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+		<style>
+			body{
+			background: linear-gradient(to bottom left,#ffddcc 0%,#ffddcc 25%,#ffaa80 25%,#ffaa80 50%,#ff9966 50%,#ff9966 75%,#ff884d 75%,#ff884d 100%);
+			}
+      			div.head1{
+          		background: linear-gradient(to right, #ED553B 0%, #ED553B 33%, #3CAEA3 33%, #3CAEA3 66%, #fcc33f 66%, #fcc33f 100%);
+          		border-top: 0.3vw gray solid;
+                	border-bottom: 0.3vw gray solid;
+      			height:2vw;
+			margin-bottom:0px;
+			padding:0px;
+			width:98.72vw;
+			overflow-x: hidden;
+			}
+			div.pic{
+          		margin: 0px;
+          		height:10vw;
+          		width:98.72vw;
+          		margin-top:0px;
+          		margin-bottom:0px;
+			display:flex;
+			background-image: url('city.jpg');
+ 			background-size: cover;
+ 			background-repeat: no-repeat;
+ 			background-position: center;
+			justify-content: center;
+          		}
+          		div.head2{
+          		background: linear-gradient(to right, #ED553B 0%, #ED553B 33%, #3CAEA3 33%, #3CAEA3 66%, #fcc33f 66%, #fcc33f 100%);
+          		border-top: 0.3vw gray solid;
+                	border-bottom: 0.3vw gray solid;
+      			height:3vw;
+			margin-right:auto;
+          		margin-top:0px;
+          		margin-bottom:0px;
+          		text-align:center;
+			width:98.72vw;
+          		font-weight:900;
+          		font-size:1.8vw;
+			font-family:Impact, Charcoal, sans-serif;
+			padding-bottom:0.5vw;
+			}
+			div.par{
+			height:175px;
+			border-left:10px #20639B solid;
+			border-right:10px #3CAEA3 solid;
+			margin-top:10px;
+			margin-right:20px;
+			margin-bottom:0px;
+			background: linear-gradient(to bottom right, #F6D55C 0%, #F6D55C 50%, #ffff66 50%, #ffff66 100%);
+			margin-bottom:20px;
+			}
+			div.par p{
+			margin-top:0px;
+			font-size:21px;
+			margin-left:20px;
+			margin-right:20px;
+			text-align:justify;
+			background-color: #ED553B;
+			font-weight:bold;
+			padding:10px;
+			float:left;
+			clear:left;
+			border-left: 10px  #cc5200 solid;
+			font-size:15px;
+			}
+			div.par h1{
+			margin-bottom:0px;
+			margin-left:20px;
+			margin-top:5px;
+			background:linear-gradient(to right, #3CAEA3 0%, #3CAEA3 50%, #ff00ff 50%, #ff00ff 100%);
+			width:255px;
+			font-family:Arial;
+			color:white;
+			margin-bottom:7px;
+			}
+			div.link{
+			font-size:70px;
+			text-align:center;
+			margin-top:35px;
+			background:linear-gradient(to right,#ff0055 0%,#ff0055 50% ,#3caea3 50%,#3caea3 100%);
+			width:98.72vw;
+			}
+			div.link a:hover{
+			color:#00FFFF;
+			float:bottom;
+			}
+			div.contact p#con1{
+			background-color:gray;
+			height:20px;
+			margin-left:15px;
+			margin-right:10px;
+			margin-top:20px;
+			float:left;
+			clear:left;
+			background: linear-gradient(#20639B,#277abe,#20639B);
+			border-left:10px #3caea3 solid;
+			}
+			div.contact p#con2{
+			background-color:gray;
+			margin-left:10px;
+			height:20px;
+			float:left;
+			background: linear-gradient(#20639B,#277abe,#20639B);
+			border-left:10px #3caea3 solid;
+			margin-top:20px;
+			}
+			div.par1{
+			height:175px;
+			border-left:10px #20639B solid;
+			border-right:10px #3CAEA3 solid;
+			margin-top:10px;
+			margin-right:20px;
+			margin-bottom:0px;
+			background: linear-gradient(to bottom right, #F6D55C 0%, #F6D55C 50%, #ffff66 50%, #ffff66 100%);
+			margin-bottom:20px;
+			}
+			div.par1 h1{
+			margin-bottom:0px;
+			margin-left:20px;
+			margin-top:5px;
+			background:linear-gradient(to right, #3CAEA3 0%, #3CAEA3 50%, #ff00ff 50%, #ff00ff 100%);
+			width:255px;
+			font-family:Arial;
+			color:white;
+			margin-bottom:7px;
+			}
+			div.par1 p{
+			margin-top:0px;
+			font-size:21px;
+			margin-left:20px;
+			margin-right:20px;
+			text-align:justify;
+			background-color: #ED553B;
+			font-weight:bold;
+			padding:10px;
+			float:left;
+			clear:left;
+			border-left: 10px  #cc5200 solid;
+			font-size:15px;
+			}
+			div.par2{
+			height:175px;
+			border-left:10px #20639B solid;
+			border-right:10px #3CAEA3 solid;
+			margin-top:10px;
+			margin-right:20px;
+			margin-bottom:0px;
+			background: linear-gradient(to bottom right, #F6D55C 0%, #F6D55C 50%, #ffff66 50%, #ffff66 100%);
+			margin-bottom:20px;
+			}
+			div.par2 h1{
+			margin-bottom:0px;
+			margin-left:20px;
+			margin-top:5px;
+			background:linear-gradient(to right, #3CAEA3 0%, #3CAEA3 50%, #ff00ff 50%, #ff00ff 100%);
+			font-family:Arial;
+			color:white;
+			margin-bottom:7px;
+			}
+			div.par2 p{
+			margin-top:0px;
+			font-size:21px;
+			margin-left:20px;
+			margin-right:20px;
+			text-align:justify;
+			background-color: #ED553B;
+			font-weight:bold;
+			padding:10px;
+			float:left;
+			clear:left;
+			border-left: 10px  #cc5200 solid;
+			font-size:15px;
+			}
+			
+
+      		</style>
+	</head>
+	<body>
+	<div class='head'>
+      			<div class='head1'></div>
+		
+			<div class='pic'></div>
+      	
+      			<div class='head2'>War on Drugs</div>
+	
+	</div>
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-4">
+				<div class='par'>
+					<h1>Author</h1>
+					<p>I am the Author, Lucien C. Tadeo, and I study is PSHS CLC. I wrote this satirical essay fro my English project and it is about a better solution to the "War on Drugs" movement.</p>
+				</div>
+			</div>
+			<div class="col-lg-4">
+				<div class='par1'>
+					<h1>Rights Issues</h1>
+					<p>Human rights issues included unlawful or arbitrary killings by security forces, vigilantes, and other people connected to the government.</p>
+				</div>
+			</div>	
+			<div class="col-lg-4">
+				 <div class='par2'>
+					<h1>Current State</h1>
+					<p>Overall during this pandemic, it seems the situation has worsened. Deaths and illegal killing have arosed over the past months. </p>
+				</div>
+			</div>	
+		</div>
+	</div>
+	<div class='link'>
+		<a href="content.html">ESSAY PAGE</a>
+	</div>
+	<div class="container">
+		<div class='contact'>
+			<p id='con1'>Contact Info: 0949 373 9611</p>
+			<p id='con2'>Email/s: tadeolucien@gmail.com</p>
+		</div>
+	</div>
+	</body>
+</html> 
